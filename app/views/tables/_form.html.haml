@@ -1,0 +1,8 @@
+.SettingTableNumber
+  = form_with model: @table, local: true do |f|
+    .SettingTableNumber__hidden
+      = f.text_field :name, class: 'SettingTableNumber__input Hidden', value: 2
+    = f.submit '参加する', class: 'SettingTableNumber__button HiddenBtn'
+  .Checkbox
+    %input.Checkbox__box{type: "checkbox" }
+      利用規約に同意しますか？

@@ -1,0 +1,22 @@
+.SideBar
+  .MessageField
+    .MessageBox
+      - @sidemessages.each do |message|
+        .Message
+          .Message__text
+            = message.content
+          .Message__tableNo
+            tableNo,
+            = message.table_id
+
+  .Form
+    = render "emoji"
+    =form_with( model: [@table, @message], local: true, id: "new_message")do |f|
+      .FormContent
+        = f.text_field :content, class: 'FormContent__inputContent', autofocus: true
+        = f.text_field :stamp, class: 'FormContent__inputStamp Hidden'
+        = icon( 'fa', 'smile', class: "EmojiBtn")
+      = button_tag type: 'submit', class: 'Form__submit' do
+        = icon('fa', 'paper-plane', class: 'SubmitIcon')
+  .Cashier
+    お会計

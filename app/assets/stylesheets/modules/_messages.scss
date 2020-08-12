@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.Header{
+  height: 100px;
+}
+.RestoName{
+  background-color: rgba(255, 254, 254, 0.55);
+  height: 100px;
+  width: 370px;
+  border-radius: 10px;
+  margin-left: 50px;
+  padding-top: 20px;
+  padding-left: 40px;
+  &__main{
+    font-size: 40px;
+  }
+}
+.MainChat{
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: rgba(182, 107, 57, 0.527);
+  padding-top: 50px;
+  // background-image: image-url('ogasuta458A7704_TP_V.jpg');
+  // background-size: 900px;
+  // background-repeat: no-repeat;
+  .RestoChat{
+    height: 100%;
+    width: 900px;
+    background-image: image-url('ogasuta458A7704_TP_V.jpg');
+    background-size: 900px;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 5px;
+    .StampChat{
+      position: relative;
+      &__table1{
+        position: absolute;
+        top: 350px;
+        left: 60px;
+      }
+      &__table2{
+        position: absolute;
+        top: 290px;
+        left: 120px;
+      }
+      &__table3{
+        position: absolute;
+        top: 230px;
+        left: 180px;
+      }
+      &__table4{
+        position: absolute;
+        top: 200px;
+        left: 260px;
+      }
+      &__table5{
+        position: absolute;
+        top: 200px;
+        left: 320px;
+      }
+      &__table6{
+        position: absolute;
+        top: 230px;
+        left: 390px;
+      }
+      &__table7{
+        position: absolute;
+        top: 260px;
+        left: 440px;
+      }
+      &__table8{
+        position: absolute;
+        top: 260px;
+        left: 570px;
+      }
+      .TableMessage{
+        width: 64px;
+        height: 64px;
+        font-size: 48px;
+      }
+    }
+  }
+}
+.SideBar{
+  width: 300px;
+  background-color: #bababa;
+  height: 100v;
+  padding-top: 55px;
+  padding-left: 20px;
+  .MessageField{
+    width: 260px;
+    height: 360px;
+    background-color: white;
+    overflow: scroll;
+    padding: 10px 20px;
+    border-radius: 6px;
+    .MessageBox{
+      .Message{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: #eee;
+        margin-top: 8px;
+        padding: 0 5px 0 10px;
+        border-radius: 15px;
+        &__text{
+          font-size: 20px;
+        }
+        &__tableNo{
+          font-size: 5px;
+          // padding-top: 10px;
+        }
+      }
+    }
+    
+  }
+  .Form{
+    width: 260px;
+    height: 100px;
+    background-color: white;
+    margin-top: 40px;
+    padding: 10px ;
+    border-radius: 5px;
+    .FormContent{
+      &__inputContent{
+        width: 210px;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 5px;
+        border-radius: 5px;
+      }
+      .EmojiBtn{
+        color: white;
+        background-color: lightslategrey;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        padding: 1px;
+      }
+      .EmojiBtn:hover{
+        background-color: black;
+      }
+    }
+    &__submit{
+      height: 35px;
+      width: 35px;
+      margin-top: 5px;
+      cursor: pointer;
+      .SubmitIcon{
+        color: lightseagreen;
+      }
+    }
+  }
+  .Cashier{
+    background-color: yellowgreen;
+    padding: 0 20px;
+    height: 50px;
+    width: 100px;
+    padding: 13px 25px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  .Cashier:hover{
+    opacity: 0.6;
+  }
+  
+}
+.Hidden{
+  display: none;
+}
