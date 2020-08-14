@@ -73,8 +73,10 @@ $(function(){
       contentType: false
     })
     .done(function(data){
+      if(data.content){
       let html = buildHTML(data);
       $(".MessageBox").prepend(html);
+      }
       let id = data.table_id
       $(".StampChat__table"+id).children().html(data.stamp);
       $('.FormContent__inputContent').val('');
