@@ -18,5 +18,5 @@
         = icon( 'fa', 'smile', class: "EmojiBtn")
       = button_tag type: 'submit', class: 'Form__submit' do
         = icon('fa', 'paper-plane', class: 'SubmitIcon')
-  .Cashier
+  = link_to call_tables_path, class: "Cashier" do
     お会計
