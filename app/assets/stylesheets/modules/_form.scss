@@ -1,24 +1,120 @@
-.SettingTableNumber{
+.WrapperTable::before{
+  content: '';
+  background-image: url('ogasuta458A7704_TP_V.jpg');
+  opacity: 0.5;
+  filter: blur(8px);
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -1;
+}
+.WrapperTable{
+  z-index:0;
+  overflow: hidden;
+  // background-color: rgb(0,163,175);
   width: 100vw;
-  height: 400px;
-  background-color: lightsteelblue;
-}
-.HiddenBtn{
-  visibility: hidden;
-}
-.Checkbox{
-  padding: 100px;
+  height: 100vh;
+  padding: 40px;
+  .TopContent{
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgba(73, 40, 13, 0.525);
+    border-radius: 10px;
+    .Shop{
+      width: 100%;
+      height: 90px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.068);
+      &__name{
+        font-size: 40px;
+        
+      }
+    }
+    .TopContentForm{
+      padding: 30px 60px;
+      &__text{
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 25px;
+        background-color: rgba(255, 255, 255, 0.068);
+      }
+      .TableForm{
+        margin-top: 30px;
+        background-color: rgba(255, 255, 255, 0.068);
+        padding: 30px;
+        &__tableSelect{
+          text-align: center;
+          font-size: 22px;
+          
+          &__box{
+            margin: 10px auto;
+            display: block;
+            width: 240px;
+            height: 50px;
+          }
+        }
+        .Checkbox{
+          text-align: center;
+          &__box{
+            
+          }
+        }
+      }
+      .TableFormBtn{
+        padding: 30px;
+        font-size: 24px;
+        display:block;
+        margin: 20px auto;
+        border-radius: 20px;
+        background-color: rgba(163, 106, 59, 0.267);
+        cursor: pointer;
+      }
+      .TableFormBtn:active{
+        outline: none;
+      }
+      .HiddenBtn{
+        visibility: hidden;
+      }
+    }
+  }
 }
 
 
 
 
-.SecretField{
-  width: 10px;
-  height: 10px;
-  background-color: mistyrose;
-}
-.Shop{
-  display: flex;
-  justify-content: space-between;
-}
+
+
+
+
+
+
+
+// .SettingTableNumber{
+//   width: 100vw;
+//   height: 400px;
+//   background-color: lightsteelblue;
+// }
+// .HiddenBtn{
+//   visibility: hidden;
+// }
+// .Checkbox{
+//   padding: 100px;
+// }
+
+
+
+
+// .SecretField{
+//   width: 10px;
+//   height: 10px;
+//   background-color: mistyrose;
+// }
+// .Shop{
+//   display: flex;
+//   justify-content: space-between;
+// }

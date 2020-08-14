@@ -1,8 +1,15 @@
-.SettingTableNumber
+.TopContentForm
   = form_with model: @table, local: true do |f|
-    .SettingTableNumber__hidden
-      = f.text_field :name, class: 'SettingTableNumber__input Hidden', value: 2
-    = f.submit '参加する', class: 'SettingTableNumber__button HiddenBtn'
-  .Checkbox
-    %input.Checkbox__box{type: "checkbox" }
-      利用規約に同意しますか？
+    .TopContentForm__text
+      ご来店ありがとうございます。
+    .TableForm
+      .TableForm__tableSelect
+        着席されたテーブル番号を選択して下さい
+        = f.select :name, {'Table No.1': 1,'Table No.2': 2,'Table No.3': 3,'Table No.4': 4,'Table No.5': 5,'Table No.6': 6,'Table No.7': 7,'Table No.8': 8}, { include_blank: '選択してください'}, { class: 'TableForm__tableSelect__box', required: true}
+      -# .TableForm__btn.HiddenBtn
+      -#   = f.submit '参加する'
+      .Checkbox
+        %input.Checkbox__box{type: "checkbox" }
+          = link_to "利用規約", "#"
+          に同意しますか？
+    = f.submit 'チャットに参加する', class: 'TableFormBtn HiddenBtn'

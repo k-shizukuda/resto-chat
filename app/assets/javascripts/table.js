@@ -1,14 +1,11 @@
-$(function(){
+  $(function(){
 
   $('.Checkbox__box').on('click',function(){
+    console.log("aa")
     if($(this).prop('checked')){
-      $('.SettingTableNumber__button').removeClass('HiddenBtn')
+      $('.TableFormBtn').removeClass('HiddenBtn')
     }else{
-      $('.SettingTableNumber__button').addClass('HiddenBtn')
+      $('.TableFormBtn').addClass('HiddenBtn')
     }
   })
-  $('.SecretField').click(function(){
-    $('.SettingTableNumber__input').removeClass('Hidden')
-  })
-
 })

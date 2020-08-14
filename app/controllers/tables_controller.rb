@@ -13,6 +13,8 @@ class TablesController < ApplicationController
     end
   end
 
+  def call
+  end
 
   private
   def table_params
