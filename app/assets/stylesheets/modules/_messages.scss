@@ -154,6 +154,9 @@
         padding-left: 5px;
         border-radius: 5px;
       }
+      &__inputContent:focus{
+        outline: none;
+      }
       .EmojiBtn{
         color: white;
         background-color: lightslategrey;
