@@ -88,7 +88,7 @@ $(function(){
       },30000)//30秒で消える
     })
   })
-  $('.Cashier').on('click',reloadStamp)
+  // $('.Cashier').on('click',reloadStamp)
   //setTimeout(reloadStamp, 7000);
-  // setInterval(reloadStamp, 7000);
+  setInterval(reloadStamp, 7000);
 });
