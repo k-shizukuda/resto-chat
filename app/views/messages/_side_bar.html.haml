@@ -9,7 +9,7 @@
             tableNo,
             = message.table_id
 
-  .Form
+  .Form{data:{id: @table.name}}
     = render "emoji"
     =form_with( model: [@table, @message], local: true, id: "new_message")do |f|
       .FormContent

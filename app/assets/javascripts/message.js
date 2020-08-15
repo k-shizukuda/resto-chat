@@ -47,9 +47,11 @@ $(function(){
     .done(function(messages){
       $.each(messages,function(i, message){
         if(last_stamp_ids[i] !== message.id){
+          let id = message.table_id
+          if($(".Form").data("id") !== id){
           let html = buildHTML(message);
           $(".MessageBox").prepend(html);
-          let id = message.table_id
+          }
           $('.StampChat__table'+id).children('.TableMessage').html(message.stamp);
           $('.StampChat__table'+id).children('.TableMessage').data('stamp-id', message.id)
           $(".StampChat__table"+id).removeClass("Hidden");
