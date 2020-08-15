@@ -3,6 +3,7 @@
     - 8.times do |i|
       - i += 1
       %div{class: "Hidden StampChat__table#{i}"}
-        - message = messages.find_by(table_id: "#{i}")
-        .TableMessage{data: {stamp: {id: message.id}}}
-          = message.stamp
+        - if messages.find_by(table_id: "#{i}")
+          - message = messages.find_by(table_id: "#{i}")
+          .TableMessage{data: {stamp: {id: message.id}}}
+            = message.stamp
