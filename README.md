@@ -1,24 +1,57 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリ名
+ # Resto-Chat
+ <img src="https://user-images.githubusercontent.com/67094874/90361506-5e9a2580-e099-11ea-8e91-880c769a1056.png" width="60%">
 
-Things you may want to cover:
+## 概要
+  飲食店の店内で使うことを想定されたチャットアプリです。
+# このアプリについて
+ ## 本番環境URL
+ [resto-chat](https://resto-chat.herokuapp.com/)
+ ## 制作した経緯
+  新しい生活様式として、感染症対策のため人との社会的距離を保つことが大切とされています。
+  そんな中、人とのコミュニケーションを楽しくとって欲しいとの思ったのがきっかけです。
+  特に飲食店ではリスクが高いとされ、外食をより安全に楽しむためにと考えたところ、店内でできるチャットアプリがあったら楽しい食事ができると思い作成をしました。
+ ## 使用言語、フレームワーク、データベース
+ ・Ruby  
+ ・haml  
+ ・Sass  
+ ・JavaScript  
+ ・Ruby on Rails  
+ ・jQuery  
+ ・PostgreSQL  
+ ・heroku  
+ 
+ ## 説明
+ 簡単な絵文字や短文を用いて、ソーシャルディスタンスを保ちながらコミュニケーションをとることができます。  
+ テーブルごとにメッセージのスタンプが表示され、それが用意された店内の写真と重ねて表示されるので、リアルのようなバーチャルのような、新しいコミュニケーション体験ができます。
+ 飲食店の各テーブルにタブレット端末等を配置し使用することを想定しております。
+ 
+ ## デモ
+ 入店した際に着席したテーブル番号を選択し、チャットに参加するをクリックします。  
+ <img src="https://user-images.githubusercontent.com/67094874/90370841-04a15c00-e0a9-11ea-8f65-f2eb1d573b15.png" width="50%">
+   
+   
+ コメント投稿をすると、右側のコメント一覧にはテキストと絵文字が表示され、メインの写真上にはコメントされたテーブルの上に絵文字のみが30秒間表示されます。
+ 
+ ![Vvo9A1HjVVzGEQQbOKPG1597651416-1597651423](https://user-images.githubusercontent.com/67094874/90372693-bcd00400-e0ab-11ea-8ab9-145a3ff732ba.gif)
+ 
+ 自動更新機能によって他のテーブルのメッセージや絵文字が自動で表示されます。
+ 
+ ![11HoNuWZKLJi2grUX7ng1597651515-1597651697](https://user-images.githubusercontent.com/67094874/90373169-79c26080-e0ac-11ea-9f8e-f83537f43f1f.gif)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ このような適度にゆるいコミュニケーションなので、気軽に参加することができます。  店内の雰囲気作りに貢献でき、お客様に楽しい体験をしていただけます。
+ 
+ ## 機能
+ ・ajaxを用いた非同期通信のコメント投稿機能  
+ ・ajaxを用いた非同期通信の自動更新機能
+ 
+ # 今後の課題
+ ・現在はお客さん同士のコミュニケーションのみなので、お店サイドもお客さんとコミュニケーションができるようにする。  
+ ・メニューやオーダー機能を実装し、お客さんのメッセージや注文した商品などを紐付けて、データ収集できるようにする。
+ 
+ 
+ 
+ 
+ 
